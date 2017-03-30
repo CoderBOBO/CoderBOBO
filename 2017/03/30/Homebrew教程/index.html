@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="CX">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="about"/>
+  <meta property="og:title" content="Homebrew教程"/>
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Coder-BOBO BLOG"/>
   <meta property="og:type" content="article" />
@@ -43,7 +43,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title">about</p>
+          <p class="title">Homebrew教程</p>
           <p class="subtitle"></p>
         </div>
         <div class="site-menu with-background-image">
@@ -108,16 +108,47 @@
           
           <!-- Date -->
           <span class="date-time info">On
-            <span class="date">2017-02-17</span>
+            <span class="date">2017-03-30</span>
             <span class="time">11:56:13</span>
           </span>
           
         </div>
         <!-- Tags -->
         
+          <div class="post-tags text-muted">
+            Tags: 
+
+<a class="tag" href="/tags/Mac/">#Mac</a>
+
+
+          </div>
+        
         <!-- Post Main Content -->
         <div class="post-content">
-          
+          <p>Homebrew是一款超级好用的包管理工具，可以实现快速搭建各种开发环境。 </p>
+<p><strong>1、如果没有安装brew,复制以下命令，ENTER</strong><br><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></p>
+<p><strong>2、安装MySQL</strong><br><code>brew install mysql</code></p>
+<ul>
+<li>配置文件：/usr/local/etc/my.cnf </li>
+<li>启动：brew services start mysql </li>
+<li>停止：brew services stop mysql </li>
+<li>重启：brew services restart mysql</li>
+</ul>
+<p><strong>3、安装Nginx</strong><br><code>brew install nginx</code></p>
+<ul>
+<li>配置文件：/usr/local/etc/nginx/ </li>
+<li>启动：brew services start nginx </li>
+<li>停止：brew services stop nginx </li>
+<li>重启：brew services restart nginx</li>
+</ul>
+<p><strong>4、安装PHP([version]代版本，如56)</strong></p>
+<ul>
+<li>配置文件：/usr/local/etc/php/ </li>
+<li>启动PHP-FPM：sudo php-fpm -D </li>
+<li>停止PHP-FPM：sudo kill -INT cat /usr/local/var/run/php-fpm.pid </li>
+<li>重启PHP-FPM：sudo kill -USR2 cat /usr/local/var/run/php-fpm.pid</li>
+</ul>
+
         </div>
       </div>
     </div>
